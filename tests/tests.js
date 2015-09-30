@@ -2,7 +2,7 @@ if (typeof require!= "undefined") {
     
     require.config({
         paths: {
-            "events": '../JSYG.Events',
+            "jsyg-events": '../JSYG.Events',
             "jquery":"../bower_components/jquery/dist/jquery",
             "jsyg-wrapper":"../bower_components/jsyg-wrapper/JSYG-wrapper"
         },
@@ -12,7 +12,7 @@ if (typeof require!= "undefined") {
 
 (function(factory) {
     
-    if (typeof define == 'function' && define.amd) define(["events"],factory);
+    if (typeof define == 'function' && define.amd) define(["jsyg-events"],factory);
     else factory(Events);
     
 }(function(Events) {

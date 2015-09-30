@@ -32,5 +32,5 @@ rect.isSVG(); //false;
 ##### Installation with bower
 
 ```shell
-bower install jsyg
+bower install jsyg-wrapper
 ```

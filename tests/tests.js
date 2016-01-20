@@ -29,7 +29,7 @@ if (typeof require!= "undefined") {
         
         events.ontest = null;
         
-        expect(3);
+        expect(4);
         
         events.on("test",incremente);
         events.trigger("test");
@@ -42,6 +42,12 @@ if (typeof require!= "undefined") {
         events.off("test",incremente);
         events.trigger("test");
         equal(cpt,2,"Suppression d'un événement");
+        
+        events.one("test",incremente);
+        events.trigger("test");
+        events.trigger("test");
+        events.trigger("test");
+        equal(cpt,3,"Méthode one qui retire aussitot l'événement");
         
     });
     

@@ -3,8 +3,8 @@ if (typeof require!= "undefined") {
     require.config({
         paths: {
             "jsyg-events": '../JSYG.Events',
-            "jquery":"../bower_components/jquery/dist/jquery",
-            "jsyg-wrapper":"../bower_components/jsyg-wrapper/JSYG-wrapper"
+            "jquery":"../node_modules/jquery/dist/jquery",
+            "jsyg-wrapper":"../node_modules/jsyg-wrapper/JSYG-wrapper"
         },
         urlArgs: "bust=" + (+new Date())
     });

@@ -1,6 +1,6 @@
 {
   "name": "jsyg-events",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Events constructor for JSYG framework (or standalone)",
   "main": "JSYG.Events.js",
   "directories": {
